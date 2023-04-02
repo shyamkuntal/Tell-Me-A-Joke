@@ -8,12 +8,15 @@ html {
 }
 body{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background-color: #0029ffa3;
 }
 .mainbody{
+  
   background-color: #815151d4;
   padding: 50px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
@@ -26,4 +29,34 @@ body{
 }
 .btn{
   padding: 10px;
+}
+
+.feedback{
+  display: flex;
+  padding: 20px 0;  
+}
+.rating{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  padding: 14px;
+  margin: 22px 8px;
+}
+.rating:hover,
+.rating:active
+{
+  background: darkseagreen;
+  border-radius: 10px;
+}
+.rating img{
+  width: 40px;
+  padding: 12px;
+  
+}
+.submit{
+  margin: 45px;
+  border-radius: 15px;
+  padding: 15px;
+  height: 60px;
 }

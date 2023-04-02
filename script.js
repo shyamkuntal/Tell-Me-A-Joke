@@ -1,3 +1,6 @@
+
+// Jokes Part
+
 const bttn = document.getElementById("btn");
 const jokeEl = document.getElementById("joke");
 
@@ -28,10 +31,27 @@ async function getJoke() {
   }
 }
 
-
-
 bttn.addEventListener("click", getJoke);
 
+
+// feedback Part
+const feedbtn = document.getElementById('submit');
+const feedtext = document.getElementById('feed');
+const feedEl = document.querySelectorAll('.rating');
+
+let selectedRating = "";
+
+feedEl.forEach((e) => {
+  e.addEventListener("click", (event) => {
+    selectedRating = `Feedback: ${event.target.innerText || event.target.parentNode.innerText} - Thank You For Your Feedback`;
+    event.target.classList.add("active");
+    event.target.parentNode.classList.add("active")
+  })
+})
+
+feedbtn.addEventListener("click", ()=> {
+  feedtext.innerText = selectedRating;
+})
 
 
 
