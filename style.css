@@ -1,0 +1,29 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+*{
+  padding: 0;  
+  margin: 0;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #0029ffa3;
+}
+.mainbody{
+  background-color: #815151d4;
+  padding: 50px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  width: 50%;
+  text-align: center;
+}
+.joke{
+  margin: 40px;
+}
+.btn{
+  padding: 10px;
+}
